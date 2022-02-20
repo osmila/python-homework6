@@ -37,6 +37,17 @@ def print_list_with_added_elms():
     print_list_of_iterable(result_list)
 
 
+def sort_result_list_by_price(result_list):
+    result_list.sort(key=lambda x: x[3])
+    return result_list
+
+
+def print_sorted_by_price_list():
+    result_list = add_lists(books_list_initial, books_list_to_add)
+    result_list_sorted = sort_result_list_by_price(result_list)
+    print_list_of_iterable(result_list_sorted)
+
+
 def print_list_of_iterable(list_of_iterable):
     list(map(lambda x: print(x), list_of_iterable))
 
