@@ -5,6 +5,13 @@ books_list_initial = [
 [88112, 'Einfuhrung in Python3, Bernd Klein', 3, 24.99]
 ]
 
+books_list_to_add = [
+[24387, ' на русском', 2, 4.59],
+[18762, 'The C Programming Language (2nd Edition)', 12, 78.80],
+[87236, 'C Programming Absolute Beginner\'s Guide', 1, 23.55],
+[58132, 'Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14', 9, 42.89]
+]
+
 
 def calculate_books_price_map(books_list):
     result_list = list(map(lambda nested_elm:
@@ -16,7 +23,22 @@ def calculate_books_price_map(books_list):
 
 
 def print_calc_books_price():
-    print(calculate_books_price_map(books_list=books_list_initial))
+    result_list = calculate_books_price_map(books_list_initial)
+    print_list_of_iterable(result_list)
+
+
+def add_lists(list_initial, list_to_add):
+    result_list = list_initial + list_to_add
+    return result_list
+
+
+def print_list_with_added_elms():
+    result_list = add_lists(books_list_initial, books_list_to_add)
+    print_list_of_iterable(result_list)
+
+
+def print_list_of_iterable(list_of_iterable):
+    list(map(lambda x: print(x), list_of_iterable))
 
 
 # def calculate_books_price(books_list):
