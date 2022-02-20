@@ -28,7 +28,7 @@ def print_calc_books_price():
 
 
 def add_lists(list_initial, list_to_add):
-    result_list = list_initial + list_to_add
+    result_list = [y for x in [list_initial, list_to_add] for y in x]
     return result_list
 
 

@@ -16,13 +16,13 @@ import task2_calc_book_price
 # print('\nTask 2: Calculate price and add $10 for less than $100:')
 # task2_calc_book_price.print_calc_books_price()
 
-# # Task 3:
-# # Добавьте к исходному списку еще несколько товаров
-# print('\nTask 3: Add items to the list:')
-# task2_calc_book_price.print_list_with_added_elms()
+# Task 3:
+# Добавьте к исходному списку еще несколько товаров
+print('\nTask 3: Add items to the list:')
+task2_calc_book_price.print_list_with_added_elms()
 
 
-# Task 4:
-# Отсортируйте получившийся список по стоимости и выведите его на экран.
-print('\nTask 4: Sort result list by price:')
-task2_calc_book_price.print_sorted_by_price_list()
+# # Task 4:
+# # Отсортируйте получившийся список по стоимости и выведите его на экран.
+# print('\nTask 4: Sort result list by price:')
+# task2_calc_book_price.print_sorted_by_price_list()
