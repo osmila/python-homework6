@@ -48,6 +48,16 @@ def print_sorted_by_price_list():
     print_list_of_iterable(result_list_sorted)
 
 
+def filter_list_by_quantity(list_to_filter, quantity):
+    return list(filter(lambda x: x[2] > quantity, list_to_filter))
+
+
+def print_filtered_list():
+    result_list = add_lists(books_list_initial, books_list_to_add)
+    result_list_filtered = filter_list_by_quantity(list_to_filter=result_list, quantity=5)
+    print_list_of_iterable(result_list_filtered)
+
+
 def print_list_of_iterable(list_of_iterable):
     list(map(lambda x: print(x), list_of_iterable))
 
